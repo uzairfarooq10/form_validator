@@ -29,7 +29,7 @@ $(function () {
         alert("Password must be 8 character or long");
         isvalid = false;
     }
-    if(cpass.length != pass.length || cpass.length < 8)
+    if( (cpass != pass) || cpass.length < 8)
     {
         $("#confirm_password").addClass("error");
         alert("Password must match and greater than or equal 8");
